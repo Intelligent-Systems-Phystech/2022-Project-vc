@@ -9,7 +9,7 @@
 </div>
 
 ## Аннотация
-1234
+There is a lot of unstructured information on the Internet that is useful for people who are professionally-looking for new projects and ideas. Data mining in venture business allows you o collect big data and use this data to build a forecast for the growth of a startup, which leads to a reduction in investment risks, and allows you to use this model in the pipeline of a venture company.
 
 ## Публикации по теме исследования
 1. 
