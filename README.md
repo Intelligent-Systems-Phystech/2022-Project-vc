@@ -2,7 +2,7 @@
   <H1>
     Machine learning approach to startup success prediction
   </H1>
-  Павлов Дмитрий Александрович
+  Pavlov Dmitriy
 </div><br>
 <div align="center">
   Научный руководитель: Моисеев Антон Евгеньевич, Аммосов Юрий Павлович <br>
