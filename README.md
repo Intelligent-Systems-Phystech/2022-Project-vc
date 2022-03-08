@@ -8,7 +8,7 @@
   Научный руководитель: Моисеев Антон Евгеньевич, Аммосов Юрий Павлович <br>
 </div>
 
-## Аннотация
+## Abstract
 This paper deals with a model for predicting the success of startups based on data about companies from CrunchBase and data about founders and investors associated with the company from LinkedIn. Unlike CrunchBase, where we have data with a clear structure, in a social network, data is filled in in the free form. In the last decade, natural language processing has shown good results when working with unstructured data. The approach for model construction using data about founders is new for the venture industry.
 
 ## Публикации по теме исследования
