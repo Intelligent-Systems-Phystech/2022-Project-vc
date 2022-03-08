@@ -1,61 +1,80 @@
-\documentclass{article}
-\usepackage{arxiv}
-
-\usepackage[utf8]{inputenc}
-\usepackage[english, russian]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{url}
-\usepackage{booktabs}
-\usepackage{amsfonts}
-\usepackage{nicefrac}
-\usepackage{microtype}
-\usepackage{lipsum}
+\documentclass[twoside,twocolumn,12pt]{article}
+\usepackage[english]{babel}
 \usepackage{graphicx}
-\usepackage{natbib}
-\usepackage{doi}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
 
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
+\usepackage[english]{babel} % Language hyphenation and typographical rules
 
-\title{Построение прогнозной моделей развития стартапов}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
 
-\author{ 
-    Pavlov Dmitriy \\
-	Russian Venture Company \\
-	Moscow Institute of Physics and Technology\\
-	Dolgoprudny, Russia \\
-	\texttt{dima-pavlov@phystech.edu} \\
-	\And
-	Moiseev Anton \\
-    Russian Venture Company \\
-	Moscow Institute of Physics and Technology\\
-	Dolgoprudny, Russia \\
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{My first scientific paper $\bullet$ 2022 $\bullet$ MIPT} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{amssymb,amsmath,amsthm}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{notation}{Notation}
+\newtheorem{example}{Example}
+\DeclareMathOperator{\sign}{sign}
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\title{\textbf{\Huge{Machine learning approach to startup success prediction}}}
+\author{%
+\textsc{Pavlov D.} \\[1ex] 
+\normalsize MIPT\\ 
+\normalsize \href{mailto:dima-pavlov@phystech.edu}{dima-pavlov@phystech.edu}
+\and 
+\textsc{Moiseev A.} \\[1ex] 
+\normalsize MIPT
 }
-\date{}
 
-\renewcommand{\shorttitle}{\textit{arXiv} Template}
+\date{\today}
 
-%%% Add PDF metadata to help others organize their library
-%%% Once the PDF is generated, you can check the metadata with
-%%% $ pdfinfo template.pdf
-\hypersetup{
-pdftitle={A template for the arxiv style},
-pdfsubject={q-bio.NC, q-bio.QM},
-pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
-pdfkeywords={First keyword, Second keyword, More},
+\renewcommand{\maketitlehookd}{
+
+\begin{abstract}
+\noindent There are a lot of unstructured information on the Internet that is useful for people who are professionally-looking for new projects and ideas. Data mining in venture business allows you o collect big data and use this data to build a forecast for the growth of a startup, which leads to a reduction in investment risks, and allows you to use this model in the pipeline of a venture company.
+\end{abstract}
 }
 
 \begin{document}
+
 \maketitle
 
-\begin{abstract}
-	There is a lot of unstructured information on the Internet that is useful for people who are professionally-looking for new projects and ideas. Data mining in venture business allows you o collect big data and use this data to build a forecast for the growth of a startup, which leads to a reduction in investment risks, and allows you to use this model in the pipeline of a venture company.
-\end{abstract}
-
-\keywords{Venture Capital \and Supervised learning \and Unsupervised learning \and Natural language processing}
-
 \section{Introduction}
-
-\bibliographystyle{unsrtnat}
-\bibliography{references}
 
 \end{document}
