@@ -9,7 +9,7 @@
 </div>
 
 ## Аннотация
-There is a lot of unstructured information on the Internet that is useful for people who are professionally-looking for new projects and ideas. Data mining in venture business allows you o collect big data and use this data to build a forecast for the growth of a startup, which leads to a reduction in investment risks, and allows you to use this model in the pipeline of a venture company.
+This paper deals with a model for predicting the success of startups based on data about companies from CrunchBase and data about founders and investors associated with the company from LinkedIn. Unlike CrunchBase, where we have data with a clear structure, in a social network, data is filled in in the free form. In the last decade, natural language processing has shown good results when working with unstructured data. The approach for model construction using data about founders is new for the venture industry.
 
 ## Публикации по теме исследования
 1. 
