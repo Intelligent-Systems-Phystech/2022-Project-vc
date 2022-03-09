@@ -154,7 +154,7 @@ The model uses unstructured data clustered according to their meaning.
 
 \section{Computational experiment}
 
-The task of the work is to build a model for predicting the success of a startup. This task is decomposed into several subtasks:
+The task is to build a model for prediction the success of a startup. This task is decomposed into several subtasks:
 
 \begin{enumerate}
     \item Collect the data from CrunchBase and LinkedIn
@@ -162,7 +162,11 @@ The task of the work is to build a model for predicting the success of a startup
     \item Create a model
 \end{enumerate}
 
-The key issue in this workfow is data preprocesing. As mentioned earlier, the novelty of the model in the use of unstructured data from social networks. Therefore, in the article we will focus on building an informational description of people's backgrounds from unstructured data. Our goal is to group people according to each of the available features:
+The key issue in this workfow is data preprocesing. As mentioned earlier, the novelty of the model in the use of unstructured data from social networks. 
+
+<ToDo sample of data and show the problem>
+
+Therefore, in the article we will focus on building an informational description of people's backgrounds from unstructured data. Our goal is to group people according to each of the available features:
 
 \begin{itemize}
     \item Education field of study
@@ -170,5 +174,18 @@ The key issue in this workfow is data preprocesing. As mentioned earlier, the no
     \item Academic degree
     \item Work experience
 \end{itemize}
+
+\subsection{Data collection}
+
+Data from CrunchBase has this structure: ...<todo scheme describe>
+
+Data from LinkedIn has Json structure: ...<todo scheme describe>
+
+
+\subsection{Preprocess data}
+
+Data from LinkedIn is processed using clustering and embeddings obtained using a neural network based on BERT: LaBSE (todo link to huggingface). The clustering is carried out using the kMeans algorithm.
+
+\subsection{Model building}
 
 \end{document}
