@@ -182,10 +182,25 @@ Data from CrunchBase has this structure: ...<todo scheme describe>
 Data from LinkedIn has Json structure: ...<todo scheme describe>
 
 
-\subsection{Preprocess data}
+\subsection{Data preprocessing}
 
 Data from LinkedIn is processed using clustering and embeddings obtained using a neural network based on BERT: LaBSE (todo link to huggingface). The clustering is carried out using the kMeans algorithm.
 
 \subsection{Model building}
+
+\section{Results}
+
+\subsection{Preprocess data}
+
+We can see that it turns out that the objects fall into clusters, but sometimes the clusters overlap. This is because TSNE transforms 754 dimensional space into 2 dimensional space. 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=160mm]{figures/paper/kMeans-9_03.png}
+  \label{fig:gd}
+  \caption{Education field of study clustering}
+\end{figure}
+
+The clustering coefficient -- Silhouette  metric is $0.26$, which indicates that clusters are more likely to be allocated than not.
 
 \end{document}
