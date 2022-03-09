@@ -1,4 +1,4 @@
-code/data
-code/.ipynb_checkpoints
-figures
+code/data/*
+*.ipynb_checkpoints
+figures/*
 .DS_store
