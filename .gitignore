@@ -2,3 +2,4 @@ code/data/*
 *.ipynb_checkpoints
 figures/*
 .DS_store
+*/__pycache__/
