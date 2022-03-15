@@ -1,4 +1,5 @@
 code/data/*
+code/models/*
 *.ipynb_checkpoints
 figures/*
 .DS_store
