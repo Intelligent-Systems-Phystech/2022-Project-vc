@@ -34,7 +34,7 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{My first scientific paper $\bullet$ 2022 $\bullet$ MIPT} % Custom header text
+\fancyhead[C]{RVC Applied AI $\bullet$ 2022 $\bullet$ MIPT} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
 \usepackage{titling} % Customizing the title section
@@ -67,7 +67,11 @@
 \and 
 \textsc{Moiseev A.} \\[1ex] 
 \normalsize MIPT
+\and 
+\textsc{Ammosov Y.} \\[1ex] 
+\normalsize MIPT
 }
+
 
 \date{\today}
 
@@ -83,7 +87,7 @@
 This paper deals with a model for predicting the success of startups based on data about companies from CrunchBase and data about founders and investors associated with the company from LinkedIn. Unlike CrunchBase, where we have data with a clear structure, in a social network, data is filled in in the free form. In the last decade, natural language processing has shown good results when working with unstructured data. The approach for model construction using data about founders is new for the venture industry.
 \noindent  \\
 
-\keywords{Venture Capital · Unsupervised learning · Natural language processing}
+\keywords{Venture Capital · Natural Language Processing}
 
 \end{abstract}
 
@@ -110,102 +114,47 @@ This paper deals with a model for predicting the success of startups based on da
 
 The number of startups born every day is growing from year to year. 
 The growth leads to an increase in the load on the pipeline of a venture capital company. 
-These companies are investing in the development of scoring models of startups to reduce the load on their pipelines. 
-The scoring models summarize the experience of a venture analyst and automate routines such as reviewing reports and information about received investment rounds. %CrunchBase
-However, in this industry, not only technical indicators are important, but also the network of people working on projects. 
-The network consists of information that gets into social networks and news. 
-At the moment, only human can process this information qualitatively. 
-This is the difficulty that models for predicting the success of startups face. 
-
-The goal of the authors was to build a model for predicting the success of a startup using CrunchBase and LinkedIn data. 
-The model uses unstructured data clustered according to their meaning.
 
 \subsection{Link review}
 
-
-
-\section{Problem statement}
-
-%Describe the elements of your problem statement:
-% - the sample set,
-% - its origin, or its algebraic structure,
-% - statistical hypotheses of data generation,
-% - [conditions of measurements] ,
-% - [restrictions of the sample set and its values],
-% - your model in the class of models,
-% - restrictions on the class of models,
-% - the error function (and its inference) or a loss function, or a quality criterion,
-% - cross-validation procedure,
-% - restrictions to the solutions,
-% - external (industrial) quality criteria,
-% - the optimization statement as argmin
-%Define the main termini: what is called the model, the solution, the algorithm.
-
-%Note that:
-
-% - The model is a parametric family of functions to map design space to target space.
-% - The criterion (error function) is a function to optimize in order to obtain an optimal solution (model parameters, a function).
-% - The algorithm transforms solution space, usually iteratively.
-% - The method combines a model, a criterion, and an algorithm to produce a solution.
-%Check it:
-
-% - the regression model,
-% - the sum of squared errors,
-% - the Newton-Raphson algorithm,
-% - the method of least squares.
-
-1
-
-\section{Computational experiment}
-
-The task is to build a model for prediction the success of a startup. This task is decomposed into several subtasks:
-
 \begin{enumerate}
-    \item Collect the data from CrunchBase and LinkedIn
-    \item Preprocess data
-    \item Create a model
+    \item \href{https://www.mdpi.com/2071-1050/13/4/2242/htm}{Econometric Estimation of the Factors That Influence Startup Success}
 \end{enumerate}
 
-The key issue in this workfow is data preprocesing. As mentioned earlier, the novelty of the model in the use of unstructured data from social networks. 
-
-<ToDo sample of data and show the problem>
-
-Therefore, in the article we will focus on building an informational description of people's backgrounds from unstructured data. Our goal is to group people according to each of the available features:
-
+\section{Data}
+    
 \begin{itemize}
-    \item Education field of study
-    \item Profession skills
-    \item Academic degree
-    \item Work experience
+    \item Raw data from LinkedIn pages
+    \item CrunchBase startups base
 \end{itemize}
 
-\subsection{Data collection}
+\section{Data Preparation}
 
-Data from CrunchBase has this structure: ...<todo scheme describe>
-Data from LinkedIn has Json structure: ...<todo scheme describe>
+\subsection{"Education field of study" field}
 
+\begin{itemize}
+    \item Handmade labels of "education field of study"
+    \item Labeling using ML algorithms
+    
+   
+\end{itemize}
 
-\subsection{Data preprocessing}
+\section{Research tracks}
 
-Data from LinkedIn is processed using clustering and embeddings obtained using a neural network based on BERT: LaBSE (todo link to huggingface). The clustering is carried out using the kMeans algorithm.
+\subsection{Hypotheses}
 
-\subsection{Model building}
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+\end{enumerate}
 
-\section{Results}
+\subsection{Data structuring by NLP methods}
 
-\subsection{Preprocess data}
-
-<Show Word2Vec property of embeddings>
-
-We can see that it turns out that the objects fall into clusters, but sometimes the clusters overlap. This is because TSNE transforms 754 dimensional space into 2 dimensional space. 
-
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=160mm]{figures/paper/kMeans-9_03.png}
-  \label{fig:gd}
-  \caption{Education field of study clustering}
-\end{figure}
-
-The clustering coefficient -- Silhouette  metric is $0.26$, which indicates that clusters are more likely to be allocated than not.
+\begin{enumerate}
+    \item sentence similarity task: Manager, Computer Science, Finance, Biology, Other
+    \item 
+    \item 
+\end{enumerate}
 
 \end{document}
